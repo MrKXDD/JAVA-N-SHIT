@@ -13,15 +13,15 @@ public class CalcOverload {
 
         System.out.print("Area of square with side ");
         side = input.nextInt();
-        System.out.println(": " + CalcOverload.calculateArea(side));
+        System.out.println(": " + calc.calculateArea(side));
         System.out.print("Area of rectangle with Length ");
         length = input.nextDouble();
         System.out.print(" and width ");
         width = input.nextDouble();
-        System.out.println(": " + CalcOverload.calculateArea(length,width));
+        System.out.println(": " + calc.calculateArea(length,width));
         System.out.print("Area of circle with radius ");
         radius = input.nextDouble();
-        System.out.println(": " + CalcOverload.calculateArea(radius));
+        System.out.println(": " + calc.calculateArea(radius));
     }
     public static int calculateArea(int num) {
         int result =0;
