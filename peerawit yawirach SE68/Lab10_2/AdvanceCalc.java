@@ -73,7 +73,7 @@ public class AdvanceCalc {
         return result;
     }
 
-    public static int divide(int n1, int n2) {
+    public static double divide(int n1, int n2) {
         int result;
         if (n1 == 0 || n2 == 0) {
             System.out.println("Error: Division by zero!");
