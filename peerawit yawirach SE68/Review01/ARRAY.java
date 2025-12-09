@@ -1,0 +1,31 @@
+package Review01;
+
+import java.util.Scanner;
+
+public class ARRAY {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        double[][] matrix = new double[3][4];
+
+        System.out.println("Enter a 3-4 Matrix row by row");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 4; j++) {
+                matrix[i][j] = input.nextDouble();
+
+            }
+        }
+
+        for (int i = 0; i < 4; i++) {
+            System.out.println("sum of elements at column:" + i + " is:" + sumColumn(matrix, i));
+        }
+    }
+
+    public static double sumColumn(double[][] m, int columnIndex) {
+        double sum = 0;
+        for (int i = 0; i < m.length; i++) {
+            sum += m[i][columnIndex];
+        }
+        return sum;
+    }
+}
